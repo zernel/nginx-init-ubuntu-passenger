@@ -18,8 +18,8 @@
 #       server and it's process state.
 #
 # processname: nginx
-# config:      /opt/nginx/conf/nginx.conf
-# pidfile:     /opt/nginx/logs/nginx.pid
+# config:      /etc/nginx/conf/nginx.conf
+# pidfile:     /etc/nginx/logs/nginx.pid
 # Provides:    nginx
 #
 # Author:  Jason Giedymin
@@ -66,12 +66,12 @@
 #                               Consts
 #------------------------------------------------------------------------------
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-DAEMON=/opt/nginx/sbin/nginx
+DAEMON=/etc/nginx/sbin/nginx
 
 PS="nginx"
 PIDNAME="nginx"                     #lets you do $PS-slave
 PIDFILE=$PIDNAME.pid                #pid file
-PIDSPATH=/opt/nginx/logs
+PIDSPATH=/etc/nginx/logs
 
 DESCRIPTION="Nginx Server..."
 
@@ -83,7 +83,7 @@ TRUE=1                              #boolean
 FALSE=0                             #boolean
 
 lockfile=/var/lock/subsys/nginx
-NGINX_CONF_FILE="/opt/nginx/conf/nginx.conf"
+NGINX_CONF_FILE="/etc/nginx/conf/nginx.conf"
 
 #------------------------------------------------------------------------------
 #                               Simple Tests

@@ -6,10 +6,12 @@ Original Author: [Jason Giedymin](http://jasongiedymin.com) <jasong -_at_- apach
 
 Check out my other [repos](http://github.com/JasonGiedymin)!
 
+Note: The Nginx should be installed at /etc/nginx.
+
 ## Install ##
 
     cd /etc/init.d
-    sudo wget https://raw.github.com/chloerei/nginx-init-ubuntu-passenger/master/nginx
+    sudo wget https://raw.github.com/zernel/nginx-init-ubuntu-passenger/master/nginx
     sudo update-rc.d nginx defaults
     sudo chmod +x nginx
     sudo service nginx start
